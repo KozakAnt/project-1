@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "tt_lakes";
+    src: url(./fonts/TTLakes/TTLakes-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "tt_lakes";
+    src: url(./fonts/TTLakes/TTLakes-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    min-width: 320px;
+    font-family: "tt_lakes";
+    margin: 0px auto;
+}
+
+.container {
+    min-width: 320px;
+    /* padding: 15px; */
+    margin: 0px auto;
+
+}
+
+/* Шапка 4 кнопки */
+.block-title {
+    display: flex;
+    max-width: auto;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #B8FFEC;
+    padding: 10px;
+}
+
+.block-title__section-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.block-title__section-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-title__button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    max-width: 100%;
+    margin: 0 5px;
+}
+
+.block-title__button:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5), inset 0 0 10px #484445;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.divider {
+    padding: 16px;
+}
+
+.block-title__divider-width_768 {
+    display: none;
+}
+
+
+/* Основное содержиние */
+.block-main {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-height: 509px;
+    background-color: #F8F8F8;
+}
+
+
+
+.block-main__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 0.8em;
+}
+
+.block-main__title::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 60%;
+    border-left: #41F6D7 solid 4px;
+}
+
+.block-main__title_title {
+    padding-left: 0.5em;
+}
+
+
+.nav__menu {
+    display: flex;
+    position: relative;
+}
+
+.ul__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    padding: 0 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.gradient-block {
+    display: flex;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.li__menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    min-width: max-content;
+    box-sizing: border-box;
+}
+
+.li__menu_a {
+    text-decoration: none;
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 12px;
+}
+
+.li__menu:hover {
+    background-color: #ffffff;
+    border: 1px solid #b8ffec;
+    border-radius: 6px;
+    padding: 3px;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+
+.about__block {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 16px;
+}
+
+.about__block_button {
+    border: none;
+    background-color: transparent;
+    width: max-content;
+    padding: 8px;
+    top: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about__block_button:hover {
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5)
+}
+
+.about__block_picture {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 15px 0;
+    max-width: 100%;
+}
+
+.block-title__button-widht_768 {
+    display: none;
+}
+
+.text-widht_768 {
+    display: none;
+    max-width: 100%;
+}
+
+.logo-widht_768 {
+    display: none;
+}
+
+.logo-widht_1120 {
+    display: none;
+}
+
+.text-widht_1120 {
+    display: none;
+}
+
+.block-main__title_disp-1120 {
+    display: none;
+}
+
+
+@media (min-width: 767px) {
+
+    body {
+        min-width: 768px;
+        min-height: 504px;
+    }
+
+    .block-title__button-widht_768 {
+        display: flex;
+    }
+
+    .block-title__divider-width_768 {
+        display: flex;
+    }
+
+    .block-title__button_call {
+        order: -5;
+    }
+
+    .block-title__button_write {
+        order: -4;
+    }
+
+    .block-title__button_profile {
+        order: -3;
+    }
+
+    .block-title__button_application {
+        order: 1;
+    }
+
+    .block-title__button_status {
+        order: 2;
+    }
+
+
+    .about__block {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .about__block_left,
+    .about__block_right {
+        width: 50%;
+    }
+
+    .about__block_left {
+        margin-right: 20px;
+    }
+
+    .logo-widht_320 {
+        display: none;
+    }
+
+    .logo-widht_768 {
+        display: flex;
+        min-width: 100%;
+    }
+
+    .text-widht_768 {
+        display: inline;
+    }
+
+    .block-title__divider-width_320 {
+        display: none;
+    }
+
+    .logo-widht_1120 {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1119px) {
+
+    body {
+        min-width: 1120px;
+        min-height: 535px;
+    }
+
+    .block-title {
+        display: none;
+    }
+
+    .block-main__title_disp-1120 {
+        display: flex;
+        align-items: center;
+    }
+
+    .block-main__title_title {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .block-main__title-descr {
+        margin-right: 32px;
+    }
+
+    .block-main__title-text {
+        margin-right: 15px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+
+    .logo-widht_320 {
+        display: none;
+    }
+
+    .logo-widht_768 {
+        display: none;
+    }
+
+    .text-widht_1120 {
+        display: inline;
+    }
+
+    .logo-widht_1120 {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .block-main__title-descr {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        max-width: 100%;
+    }
+
+    .block-main__title-descr:hover {
+        box-shadow: 0 0 15px rgb(0, 0, 0, 0.5), inset 0 0 10px #484445;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .li__menu_a,
+    .li__menu,
+    .ul__menu {
+        flex-wrap: wrap;
+    }
+}
