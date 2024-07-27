@@ -56,7 +56,7 @@ body {
 }
 
 .block-title__button:hover {
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5), inset 0 0 10px #484445;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5), inset 0 0 0px #484445;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -100,6 +100,7 @@ body {
 
 .block-main__title_title {
     padding-left: 0.5em;
+    font-size: 28px;
 }
 
 
@@ -166,6 +167,9 @@ body {
 
 .about__block_button {
     border: none;
+    background-image: url(./img/mainSection_mob/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
     background-color: transparent;
     width: max-content;
     padding: 8px;
@@ -180,7 +184,7 @@ body {
     border-radius: 5px;
     transition: all 0.2s;
     cursor: pointer;
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5)
+    color: #00b3ff;
 }
 
 .about__block_picture {
@@ -288,7 +292,6 @@ body {
         display: none;
     }
 
-
 }
 
 @media (min-width: 1119px) {
@@ -305,6 +308,7 @@ body {
     .block-main__title_disp-1120 {
         display: flex;
         align-items: center;
+        margin-right: 5px;
     }
 
     .block-main__title_title {
@@ -321,6 +325,22 @@ body {
         font-size: 16px;
         line-height: 24px;
         font-weight: normal;
+    }
+
+    .button-width_1120 {
+        background-repeat: no-repeat;
+        background-position: 0%;
+        width: 40px;
+        height: 40px;
+        border: 0;
+    }
+
+    .repair {
+        background-image: url(./img/upperMenu_mob/repair.svg);
+    }
+
+    .checkstatus {
+        background-image: url(./img/upperMenu_mob/checkstatus.svg);
     }
 
     .logo-widht_320 {

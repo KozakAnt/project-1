@@ -24,7 +24,6 @@
           />
           <input
             type="image"
-            class="block-title__button"
             src="./img/upperMenu_mob/Group.svg"
             alt="Лого CPS"
           />
@@ -79,23 +78,21 @@
       </header>
       <main class="block-main">
         <div class="block-main__title">
-          <span class="block-main__title_title">Услуги и сервисы</span>
+          <h1 class="block-main__title_title">Услуги и сервисы</h1>
           <!-- !!disp-1120 -->
           <div class="block-main__title_disp-1120">
-            <span class="block-main__title-text">Оставить заявку</span>
-            <input
-              type="image"
-              class="block-main__title-descr"
-              src="./img/upperMenu_mob/repair.svg"
-              alt="оставить заявку"
-            />
-            <span class="block-main__title-text">Статус ремонта</span>
-            <input
-              type="image"
-              class="block-main__title-descr"
-              src="./img/upperMenu_mob/checkstatus.svg"
-              alt="статус ремонта"
-            />
+            <label class="block-main__title_disp-1120">
+              <span class="block-main__title-text">Оставить заявку</span>
+              <button
+                class="button-width_1120 repair block-title__button"
+              ></button>
+            </label>
+            <label class="block-main__title_disp-1120">
+              <span class="block-main__title-text">Статус ремонта</span>
+              <button
+                class="button-width_1120 checkstatus block-title__button"
+              ></button>
+            </label>
           </div>
           <!-- !!disp-1120 end -->
         </div>
@@ -134,7 +131,7 @@
             </ul>
           </nav>
         </section>
-        <section class="about__block">
+        <article class="about__block">
           <div class="about__block_left">
             <p class="about__block_p1">
               Мы являемся авторизованным сервисным центром по ремонту техники
@@ -150,7 +147,6 @@
               >
             </p>
             <button class="about__block_button">
-              <img src="./img//mainSection_mob/icon-arrow.svg" alt="стрелка" />
               <span>Читать далее</span>
             </button>
           </div>
@@ -171,7 +167,34 @@
               alt="Фото: часы работы и логотип CPS"
             />
           </div>
-        </section>
+
+          <!-- <div class="about__block_picture about__block_right">
+            <picture>
+              <source
+                srcset="./img/mainSection_mob/logo-picture-320.jpg"
+                type="image/jpeg"
+                media="(max-width:767px)"
+                class="footer__picture logo-widht_320"  
+              />
+              <source
+                srcset="./img/mainSection_mob/logo-picture-360.jpg"
+                type="image/jpeg"
+                media="(min-width:768px)"
+                class="footer__picture logo-widht_768"
+              />
+              <source
+                srcset="./img/mainSection_mob/logo-picture-531,35.jpg"
+                type="image/jpeg"
+                media="(min-width:1120px)"
+                class="footer__picture logo-widht_1120"
+              />
+              <img
+                src="./img/mainSection_mob/logo-picture-531,35.jpg"
+                alt="Фото: часы работы и лого CPS"
+              />
+            </picture>
+          </div> -->
+        </article>
       </main>
     </div>
   </body>
