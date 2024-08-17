@@ -218,7 +218,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px 0 15px 0;
-    max-width: max-content;
+    max-width: 100%;
 }
 
 .block-title__button-widht_768 {
