@@ -12,9 +12,8 @@
       <header class="block-title">
         <section class="block-title__section-left">
           <input
-            type="image"
-            class="block-title__button"
-            src="./img/upperMenu_mob/burger.svg"
+            type="button"
+            class="block-title__button block-title__button-widht_768_burger icon_burger"
             alt="Меню"
           />
           <img
@@ -22,11 +21,7 @@
             class="block-title__divider-width_768 divider"
             alt="иконка разделения меню"
           />
-          <input
-            type="image"
-            src="./img/upperMenu_mob/Group.svg"
-            alt="Лого CPS"
-          />
+          <img src="./img/upperMenu_mob/Group.svg" alt="Лого CPS" />
           <img
             src="./img/upperMenu_mob/divider.svg"
             class="block-title__divider-width_320 divider"
@@ -35,42 +30,38 @@
         </section>
         <section class="block-title__section-right">
           <input
-            type="image"
-            class="block-title__button block-title__button_application"
-            src="./img/upperMenu_mob/repair.svg"
+            type="button"
+            class="block-title__button icon_tools"
             alt="Оставить заявку"
           />
           <input
-            type="image"
-            class="block-title__button block-title__button_status"
-            src="./img/upperMenu_mob/checkstatus.svg"
+            type="button"
+            class="block-title__button icon_search"
             alt="Статус заявки"
           />
 
           <!--!! иконки меню медиа_768 начало-->
+
           <input
-            type="image"
-            class="block-title__button block-title__button_call block-title__button-widht_768"
-            src="./img/upperMenu_mob/call.svg"
+            type="button"
+            class="block-title__button block-title__button_phone block-title__button-widht_768 icon_phone"
             alt="Позвонить"
           />
 
           <input
-            type="image"
-            class="block-title__button block-title__button_write block-title__button-widht_768"
-            src="./img/upperMenu_mob/chat.svg"
+            type="button"
+            class="block-title__button block-title__button_message block-title__button-widht_768 icon_message"
             alt="Написать"
           />
 
           <input
-            type="image"
-            class="block-title__button block-title__button_profile block-title__button-widht_768"
-            src="./img/upperMenu_mob/profile.svg"
+            type="button"
+            class="block-title__button block-title__button_people block-title__button-widht_768 icon_people"
             alt="Перейти в профиль"
           />
           <img
             src="./img/upperMenu_mob/divider.svg"
-            class="block-title__divider-width_768 divider"
+            class="block-title__divider-width_768 block-title__button_divider"
             alt="иконка разделения меню"
           />
           <!-- !! иконки меню медиа_768 конец-->
@@ -84,13 +75,13 @@
             <label class="block-main__title_disp-1120">
               <span class="block-main__title-text">Оставить заявку</span>
               <button
-                class="button-width_1120 repair block-title__button"
+                class="button-width_1120 block-title__button icon_tools"
               ></button>
             </label>
             <label class="block-main__title_disp-1120">
               <span class="block-main__title-text">Статус ремонта</span>
               <button
-                class="button-width_1120 checkstatus block-title__button"
+                class="button-width_1120 block-title__button icon_search"
               ></button>
             </label>
           </div>
@@ -151,49 +142,25 @@
             </button>
           </div>
           <div class="about__block_picture about__block_right">
-            <img
-              src="./img/mainSection_mob/logo-picture-320.jpg"
-              class="footer__picture logo-widht_320"
-              alt="Фото: часы работы и логотип CPS"
-            />
-            <img
-              src="./img/mainSection_mob/logo-picture-360.jpg"
-              class="footer__picture logo-widht_768"
-              alt="Фото: часы работы и логотип CPS"
-            />
-            <img
-              src="./img/mainSection_mob/logo-picture-531,35.jpg"
-              class="footer__picture logo-widht_1120"
-              alt="Фото: часы работы и логотип CPS"
-            />
-          </div>
-
-          <!-- <div class="about__block_picture about__block_right">
             <picture>
               <source
-                srcset="./img/mainSection_mob/logo-picture-320.jpg"
-                type="image/jpeg"
-                media="(max-width:767px)"
-                class="footer__picture logo-widht_320"  
+                media="(min-width: 1119px)"
+                srcset="./img/mainSection_mob/logo_desktop.svg"
               />
               <source
-                srcset="./img/mainSection_mob/logo-picture-360.jpg"
-                type="image/jpeg"
-                media="(min-width:768px)"
-                class="footer__picture logo-widht_768"
+                media="(min-width: 767px)"
+                srcset="./img/mainSection_mob/logo_tablette.svg"
               />
               <source
-                srcset="./img/mainSection_mob/logo-picture-531,35.jpg"
-                type="image/jpeg"
-                media="(min-width:1120px)"
-                class="footer__picture logo-widht_1120"
+                media="(max-width: 768px)"
+                srcset="./img/mainSection_mob/logo_mobile.svg"
               />
               <img
-                src="./img/mainSection_mob/logo-picture-531,35.jpg"
-                alt="Фото: часы работы и лого CPS"
+                src="./img/mainSection_mob/logo_mobile.svg"
+                alt="Логотип CPS"
               />
             </picture>
-          </div> -->
+          </div>
         </article>
       </main>
     </div>
